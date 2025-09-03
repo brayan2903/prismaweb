@@ -8,7 +8,7 @@
 
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
             <div class="p-6 border-b border-gray-200">
-                Sample static text page
+                Sample static text pageeee
             </div>
         </div>
     </AuthenticatedLayout>
