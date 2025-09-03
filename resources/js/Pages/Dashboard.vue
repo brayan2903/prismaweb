@@ -8,7 +8,7 @@ import { Head } from '@inertiajs/vue3';
 
     <AuthenticatedLayout>
         <template #header>
-            Dashboard hola
+            Dashboard prueba 02.0
         </template>
 
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
