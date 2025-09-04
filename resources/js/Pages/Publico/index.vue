@@ -20,7 +20,7 @@
           <h3>Desarrollo de Software</h3>
           <p>Desarrollamos soluciones a medida que ayudan a optimizar y automatizar procesos.</p>
         </div>
-        <div class="service-card">
+        <!-- <div class="service-card">
           <img src="/logo.png" alt="Aplicaciones Móviles" loading="lazy" />
           <h3>Aplicaciones Móviles</h3>
           <p>Aplicaciones móviles para facilitar la interacción con tus clientes y mejorar la productividad.</p>
@@ -29,7 +29,7 @@
           <img src="/logo.png" alt="Diseño Web" loading="lazy" />
           <h3>Diseño Web</h3>
           <p>Diseños web atractivos y funcionales para mejorar la experiencia de tus usuarios.</p>
-        </div>
+        </div> -->
       </div>
     </section>
 

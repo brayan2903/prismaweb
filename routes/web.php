@@ -41,8 +41,35 @@ Route::middleware('auth')->group(function () {
 });
 
 
+// Ruta de inicio
 Route::get('/', fn () => Inertia::render('Publico/index'))->name('inicio');
 
+// Ruta para la facturación
+//Route::get('/facturacion', fn () => Inertia::render('Publico/Facturacion'))->name('facturacion');
 
+// Ruta para el mega menú de módulos
+Route::get('/modulos', fn () => Inertia::render('Publico/Modulos'))->name('modulos');
+
+// Grupo de rutas para módulos
+Route::prefix('modulos')->name('modulos.')->group(function () {
+    // Gestión Comercial
+    Route::get('/almacen', fn () => Inertia::render('Modulos/Almacen'))->name('almacen');
+    Route::get('/compras', fn () => Inertia::render('Modulos/Compras'))->name('compras');
+    Route::get('/produccion', fn () => Inertia::render('Modulos/Produccion'))->name('produccion');
+    Route::get('/ventas', fn () => Inertia::render('Modulos/Ventas'))->name('ventas');
+    Route::get('/distribucion', fn () => Inertia::render('Modulos/Distribucion'))->name('distribucion');
+    Route::get('/tesoreria', fn () => Inertia::render('Modulos/Tesoreria'))->name('tesoreria');
+
+    // Finanzas
+    Route::get('/contabilidad', fn () => Inertia::render('Modulos/Contabilidad'))->name('contabilidad');
+    Route::get('/planillas', fn () => Inertia::render('Modulos/Planillas'))->name('planillas');
+
+    // Aplicativos Móviles
+    Route::get('/vendedores', fn () => Inertia::render('Modulos/Vendedores'))->name('vendedores');
+    Route::get('/repartidores', fn () => Inertia::render('Modulos/Repartidores'))->name('repartidores');
+    Route::get('/almaceneros', fn () => Inertia::render('Modulos/Almaceneros'))->name('almaceneros');
+    Route::get('/gerentes', fn () => Inertia::render('Modulos/Gerentes'))->name('gerentes');
+    Route::get('/supervisor', fn () => Inertia::render('Modulos/Supervisor'))->name('supervisor');
+});
 
 require __DIR__.'/auth.php';
