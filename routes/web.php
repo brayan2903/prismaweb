@@ -72,4 +72,7 @@ Route::prefix('modulos')->name('modulos.')->group(function () {
     Route::get('/supervisor', fn () => Inertia::render('Modulos/Supervisor'))->name('supervisor');
 });
 
+
+
+
 require __DIR__.'/auth.php';

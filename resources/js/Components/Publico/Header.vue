@@ -4,7 +4,7 @@
       <!-- Logo -->
       <div class="logo">
         <Link :href="route('inicio')" @click="closeMenu">
-          <img src="/logo.png" alt="Globaltech Logo" />
+          <img src="/logo_prisma.png" alt="Globaltech Logo" />
         </Link>
       </div>
 
